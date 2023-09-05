@@ -4,8 +4,8 @@ import fetch from 'node-fetch';
 import cron from "cron"
 import * as path from "path";
 
-const credFile = path.resolve(process.env.DATA_FOLDER,"cred.json");
-const agentFile = path.resolve(process.env.DATA_FOLDER,"agent.js");
+const credFile = path.resolve("./data/cred.json");
+const agentFile = path.resolve("./data/agent.js");
 
 (async function main() {
         function readDataCred() {
