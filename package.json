@@ -1,0 +1,24 @@
+{
+  "name": "ups-node",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^2.1.0",
+    "dotenv": "^16.0.3",
+    "global": "^4.4.0",
+    "lodash": "^4.17.21",
+    "node-cron": "^3.0.1",
+    "node-fetch": "^3.2.10",
+    "node-schedule": "^2.1.0",
+    "nodemon": "^2.0.19",
+    "pm2": "^5.2.0",
+    "socket.io-client": "^4.5.4",
+    "yaml": "^2.1.1"
+  },
+  "scripts": {
+    "build": "esbuild  src/index.js --outfile=build/updator.cjs --bundle  --platform=node  --format=cjs",
+    "start": "node src/index.js"
+  }
+}
